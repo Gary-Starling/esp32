@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/CMakeFiles/bootloader
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/CMakeFiles/bootloader.rule
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/CMakeFiles/bootloader-complete.rule
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/CMakeFiles/bootloader
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/CMakeFiles/bootloader.rule
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/CMakeFiles/bootloader-complete.rule
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/esp-idf/examples/peripherals/i2c/i2c_self_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

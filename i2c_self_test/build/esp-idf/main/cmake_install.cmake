@@ -1,4 +1,4 @@
-# Install script for directory: C:/esp/esp-idf/examples/peripherals/i2c/i2c_self_test/main
+# Install script for directory: C:/esp-idf/examples/peripherals/i2c/i2c_self_test/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -507,7 +507,10 @@
                         "help": "The selected GPIO will be configured as an input with internal pull-up enabled.\nTo trigger a factory reset, this GPIO must be pulled low on reset.\nNote that GPIO34-39 do not have an internal pullup and an external one must be provided.",
                         "id": "BOOTLOADER_NUM_PIN_FACTORY_RESET",
                         "name": "BOOTLOADER_NUM_PIN_FACTORY_RESET",
-                        "range": null,
+                        "range": [
+                            0,
+                            39
+                        ],
                         "title": "Number of the GPIO input for factory reset",
                         "type": "int"
                     },
