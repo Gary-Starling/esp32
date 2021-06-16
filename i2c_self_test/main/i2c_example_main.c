@@ -453,7 +453,7 @@ int display_init(void)
     ret = display_wrcom(0x00); //
     ret = display_wrcom(0xa4); //Нормальное отображение
     ret = display_wrcom(0xa8); //MUX RATIO
-    //ret = display_wrcom(0x40); //MUX RATIO
+    ret = display_wrcom(0x7f); //[6:0] 128MUX
     ret = display_wrcom(0x7f); //Contrast control register is set at 7Fh
     ret = display_wrcom(0xb1); //phase lenght
     ret = display_wrcom(0xf2); //
@@ -464,11 +464,13 @@ int display_init(void)
     ret = display_wrcom(0xb6); //Set seconf Pre-charge period
     ret = display_wrcom(0x0f); //
     ret = display_wrcom(0xbc); //Set precharcge voltage
+    ret = display_wrcom(0x1f); //set vcom
+    ret = display_wrcom(0xbe); //Set Vcom
     ret = display_wrcom(0x07); //
     ret = display_wrcom(0xfd); //unlock comm
     ret = display_wrcom(0x12); //
     ret = display_wrcom(0xAF);
-
+    
     return ret;
 }
 
@@ -478,8 +480,8 @@ void set_coord(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2) //, uint8_t x2, u
     int res = 0;
 
     res = display_wrcom(0x15); //колонка
-    res = display_wrcom(x1);
-    res = display_wrcom(x2);
+    res = display_wrcom(x1); //Начало
+    res = display_wrcom(x2); //Конец
     res = display_wrcom(0x75); //столбец
     res = display_wrcom(y1);
     res = display_wrcom(y2);
@@ -605,13 +607,6 @@ static void i2c_test_task(void *arg)
         ssd1327_write_part_buff(0, 10, 8, strlen(str_out)); //Надо писануть функция вычисления размера строки в кол-во бит
         print_string(0, 20, "Test esp32 i2c", White);
         ssd1327_write_part_buff(0, 20, 8, strlen("Test esp32 i2c"));
-      //  print_string(0, 30, "some text", White);
-      //  ssd1327_write_part_buff(0, 30, 8, strlen("some text"));
-      //  print_string(0, 50, "BIG TEXT", White);
-      //  ssd1327_write_part_buff(0, 50, 8, strlen("BIG TEXT"));
-      //  print_string16(0,70,"ABC X16", White);
-        //ssd1327_write_part_buff(0, 70, 32, strlen("TEST X16"));
-        //ssd1327_full_write_buff();
 
     }
 
