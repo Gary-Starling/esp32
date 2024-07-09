@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "cstddef": "c",
-        "string": "c",
-        "array": "c",
-        "string_view": "c"
-    }
-}
